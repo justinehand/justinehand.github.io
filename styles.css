@@ -34,7 +34,7 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 3rem;
     background-color:#FF3D74;
     justify-content: space-around;
@@ -48,6 +48,7 @@ h1 {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 1.25em;
+    margin:.5em;
 }
 
 a.flex-links:link {
@@ -73,6 +74,7 @@ a.flex-links:hover {
 #wrapper {
     max-height: 100vh;
     overflow-y: scroll;
+    overflow-x:hidden;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
@@ -91,8 +93,10 @@ a.flex-links:hover {
 
 h1.home {
     color: #FFF7FA;
-    width: 8em;
+    max-width: 8em;
     text-align: center;
+    margin:.5em;
+
 }
 
 #about-section {
@@ -109,14 +113,14 @@ h1.home {
 
 h1.about {
     color: #FF3D74;
-    margin:0 1rem;
+    margin:.5em;
 }
 
 p.about {
     color: #FF3D74;
-    width: 29em;
+    max-width: 29em;
     border-left: 2px solid #D5FF3F;
-    padding: 1rem;
+    padding: 1.5em;
 }
 
 
@@ -136,7 +140,7 @@ h1.portfolio {
     color: #D5FF3F;
     background-color: #FF3D74;
     padding:.5em;
-    margin:0 1rem;
+    margin:.5em;
 }
 
 #portfolio-links {
@@ -196,6 +200,7 @@ a.portfolio:active {
 @media (max-width: 600px) {
     #flex-box {
         flex-flow: wrap;
+        height:auto;
     }
     .flex-links {
         padding:.2em;
